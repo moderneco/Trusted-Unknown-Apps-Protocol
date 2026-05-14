@@ -2,37 +2,77 @@
 
 **TUAP** is a global, neutral, behavior‑based security framework designed to eliminate up to **99% of mobile malware**.
 
-## Why TUAP?
-- Current mobile security relies on static scanning and store policies.
-- Malware bypasses these protections via obfuscation, delayed payloads, and sideloading.
-- TUAP introduces a **behavior‑based, developer‑neutral, OS‑enforced** model.
-
-## Core Components
-1. **Trusted Unknown Analysis Engine (TUAE)** – automated sandbox for APKs.
-2. **Developer Identity Verification (DIV)** – trust certificates for verified devs.
-3. **Global Threat Intelligence Feed (GTIF)** – real‑time malicious domain/IP sharing.
-4. **OS Enforcement Layer (OSEL)** – per‑app network allowlists + firewall rules.
-
-## Why Android First?
-- Open architecture, APK accessibility.
-- 90% of mobile malware targets Android.
-- Google Play Protect is insufficient.
-
-## Roadmap
-- Phase 1: MVP sandbox + threat feed.
-- Phase 2: Public release + guardian app.
-- Phase 3: OS integration (AOSP, OEMs).
-- Phase 4: Global standardization.
-
-## Contribution
-This repo is open for:
-- Security researchers
-- Android developers
-- OS vendors
-- Policy makers
-
-Join discussions in `/discussions/roadmap.md`.
+This repository contains:
+- The official TUAP Whitepaper (v1.0)
+- The TUAP Roadmap (v1.0)
+- Discussion space for researchers, developers, and OS vendors
 
 ---
 
-> **Goal:** A safer digital world where malware cannot survive — regardless of borders, politics, or platforms.
+## 🔒 Why TUAP?
+
+Traditional mobile security relies on:
+- static scanning  
+- signature detection  
+- store policies  
+- user permissions  
+
+These methods fail against:
+- obfuscation  
+- delayed payloads  
+- sideloading  
+- dynamic C2 servers  
+- supply‑chain attacks  
+
+TUAP introduces a **behavior‑based, developer‑neutral, OS‑enforced** model.
+
+---
+
+## 🧩 Core Components
+
+### 1. Trusted Unknown Analysis Engine (TUAE)
+Automated sandbox that analyzes APK behavior, network traffic, permissions, and API usage.
+
+### 2. Developer Identity Verification (DIV)
+Developers receive a **Developer Trust Certificate (DTC)** after identity verification and behavioral testing.
+
+### 3. Global Threat Intelligence Feed (GTIF)
+Real‑time feed of malicious domains, IPs, certificates, and behavioral indicators.
+
+### 4. OS Enforcement Layer (OSEL)
+Per‑app network allowlists, DNS blocking, firewall enforcement, and anomaly detection.
+
+---
+
+## 📱 Why Android First?
+
+- Open architecture  
+- APK accessibility  
+- 90% of mobile malware targets Android  
+- OEMs can integrate TUAP independently  
+- Google Play Protect is insufficient  
+
+---
+
+## 🗺 Roadmap
+
+See:  
+`/discussions/roadmap-v1.0.md`
+
+---
+
+## 🤝 Contributing
+
+TUAP is open to:
+- security researchers  
+- Android developers  
+- OS vendors  
+- policy makers  
+
+Open discussions and issues are welcome.
+
+---
+
+## 🎯 Mission
+
+> **A safer digital world where malware cannot survive — regardless of borders, politics, or platforms.**
